@@ -14,12 +14,18 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@headlessui/react": "^0.2.0",
+    "@tailwindcss/aspect-ratio": "^0.2.0",
+    "@tailwindcss/forms": "^0.2.1",
+    "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^10.1.0",
     "gatsby": "^2.26.1",
     "gatsby-plugin-postcss": "^3.3.0",
+    "gatsby-plugin-react-helmet": "^3.9.0",
     "postcss": "^8.2.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
