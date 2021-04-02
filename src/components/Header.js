@@ -46,7 +46,7 @@ export default function Header() {
                                     <span className="text-orange-600 hover:text-orange-700 font-bold font-logo text-3xl">jarom.dev</span>
                                 </div>
                                 <div className="-mr-2">
-                                    <button type="button" onClick={() => { setMobileIsOpen(false) }} className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                    <button type="button" onClick={() => { setMobileIsOpen(false) }} className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500">
                                         <span className="sr-only">Close menu</span>
                                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
