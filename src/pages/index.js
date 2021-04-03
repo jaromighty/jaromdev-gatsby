@@ -22,7 +22,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="hidden md:block -mt-6 md:-mt-36 lg:mt-0 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
-                            <img className="transform translate-x-6 translate-y-6 lg:translate-x-0 xl:-translate-x-28 xl:translate-y-12 rounded-md object-contain object-right-top" src="/homepage-short.png" alt="Jarom Rial"/>
+                            <img className="transform translate-x-6 translate-y-6 lg:translate-x-0 xl:-translate-x-28 xl:translate-y-12 rounded-md object-contain object-right-top" src="/homepage-short.png" alt="Jarom Rial" />
                         </div>
                     </div>
                 </div>

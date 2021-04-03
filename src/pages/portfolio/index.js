@@ -2,9 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import SEO from "../../components/seo"
 import MainLayout from "../../components/layouts/Layout"
+import { StaticImage } from "gatsby-plugin-image"
 
-import countryk9 from "../../images/countryk9.jpg"
-import touchstone from "../../images/touchstone.jpg"
+// import countryk9 from "../../images/countryk9.jpg"
 import harpistsprings from "../../images/harpistinthesprings.jpg"
 import boers from "../../images/mount-lewis-boers.jpg"
 import relativeinterest from "../../images/relativeinterest.jpg"
@@ -27,23 +27,11 @@ export default function Portfolio() {
                             <Link to="#" className="block group">
                                 <figure>
                                     <div className="relative rounded-3xl overflow-hidden transition transform duration-150 ease-in-out">
-                                        <img src={countryk9} alt="Country K9" className="w-full h-auto" />
+                                        <StaticImage src="../../images/countryk9.jpg" alt="Country K9" className="w-full h-auto" placeholder="blurred" />
                                         <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
                                     </div>
                                     <figcaption className="mt-3">
                                         <p className="flex items-baseline text-sm font-medium text-gray-900">Country K9</p>
-                                    </figcaption>
-                                </figure>
-                            </Link>
-
-                            <Link to="#" className="block group">
-                                <figure>
-                                    <div className="relative rounded-3xl overflow-hidden transition transform duration-150 ease-in-out">
-                                        <img src={touchstone} alt="Touchstone Recruiting Group" className="w-full h-auto" />
-                                        <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition ease-in-out duration-150"></div>
-                                    </div>
-                                    <figcaption className="mt-3">
-                                        <p className="flex items-baseline text-sm font-medium text-gray-900">Touchstone Recruiting Group</p>
                                     </figcaption>
                                 </figure>
                             </Link>
