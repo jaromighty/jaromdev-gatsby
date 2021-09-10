@@ -22,7 +22,7 @@ export default function Portfolio() {
                             <h3 className="text-lg leading-6 font-medium text-gray-900">Client Websites</h3>
                         </div>
                         <div className="mt-8 grid grid-cols-1 gap-y-8 sm:grid-cols-3 sm:gap-x-5 sm:gap-y-6 md:grid-cols-4 lg:col-span-3">
-                            <a href="https://countryk9.dog/?ref=jaromdev" target="_blank" className="block group">
+                            <a href="https://countryk9.dog/?ref=jaromdev" target="_blank" rel="noreferrer" className="block group">
                                 <figure>
                                     <div className="relative rounded-3xl overflow-hidden transition transform duration-150 ease-in-out">
                                         <img src={countryk9} alt="Country K9" className="w-full h-auto" />
@@ -34,7 +34,7 @@ export default function Portfolio() {
                                 </figure>
                             </a>
 
-                            <a href="https://harpistinthesprings.com/?ref=jaromdev" target="_blank" className="block group">
+                            <a href="https://harpistinthesprings.com/?ref=jaromdev" target="_blank" rel="noreferrer" className="block group">
                                 <figure>
                                     <div className="relative rounded-3xl overflow-hidden transition transform duration-150 ease-in-out">
                                         <img src={harpistsprings} alt="Harpist in the Springs" className="w-full h-auto" />
@@ -46,7 +46,7 @@ export default function Portfolio() {
                                 </figure>
                             </a>
 
-                            <a href="https://mountlewisboers.com/?ref=jaromdev" target="_blank" className="block group">
+                            <a href="https://mountlewisboers.com/?ref=jaromdev" target="_blank" rel="noreferrer" className="block group">
                                 <figure>
                                     <div className="relative rounded-3xl overflow-hidden transition transform duration-150 ease-in-out">
                                         <img src={boers} alt="Mount Lewis Boers" className="w-full h-auto" />
@@ -58,7 +58,7 @@ export default function Portfolio() {
                                 </figure>
                             </a>
 
-                            <a href="https://relativeinterest.com/?ref=jaromdev" target="_blank" className="block group">
+                            <a href="https://relativeinterest.com/?ref=jaromdev" target="_blank" rel="noreferrer" className="block group">
                                 <figure>
                                     <div className="relative rounded-3xl overflow-hidden transition transform duration-150 ease-in-out">
                                         <img src={relativeinterest} alt="Relative Interest" className="w-full h-auto" />
