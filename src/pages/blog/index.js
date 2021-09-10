@@ -12,6 +12,7 @@ export default function Blog() {
                     <h2 className="text-2xl font-bold font-logo leading-7 text-gray-900 sm:text-3xl sm:truncate">
                         Blog
                     </h2>
+                    <p className="mt-6 text-gray-600">No articles to display.</p>
                 </div>
             </MainLayout>
         </>
