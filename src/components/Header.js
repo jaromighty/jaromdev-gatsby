@@ -12,7 +12,7 @@ export default function Header() {
                         <Link to="/" className="text-orange-600 hover:text-orange-700 font-bold font-logo text-3xl">jarom.dev</Link>
                         <div className="-mr-2 flex items-center md:hidden">
                             <button type="button" onClick={() => { setMobileIsOpen(true) }} className="bg-gray-100 rounded-md p-2 inline-flex items-center justify-center text-gray-500 hover:text-gray-600 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange-500" id="main-menu" aria-haspopup="true">
-                                <span class="sr-only">Open main menu</span>
+                                <span className="sr-only">Open main menu</span>
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h8m-8 6h16" />
                                 </svg>
