@@ -21,8 +21,8 @@ export default function Refresh() {
                     <p className="mt-6 text-gray-600 max-w-xl">I have found that many websites out there are in need of a modern, refreshed design. Whenever I discover a website in need, I create an updated home page. This is then sent to the owner of the website in the hope of having the opportunity to build a new website for them.</p>
                     <div className="mt-16">
                         <div className="mt-8 grid grid-cols-1 gap-y-8 sm:grid-cols-3 sm:gap-x-5 sm:gap-y-6 md:grid-cols-4 lg:col-span-3">
-                            {sites.map(site => (
-                                <Link to={site.slug} className="block group">
+                            {sites.map((site, siteIdx) => (
+                                <Link to={site.slug} className="block group" key={siteIdx}>
                                     <figure>
                                         <div className="relative rounded-3xl overflow-hidden transition transform duration-150 ease-in-out">
                                             <img src={site.image} alt="Jalanin" className="w-full h-auto" />
