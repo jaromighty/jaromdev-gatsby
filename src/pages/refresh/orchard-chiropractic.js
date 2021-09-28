@@ -251,7 +251,7 @@ export default function OrchardChiropractic() {
                                         </button>
                                     </form>
                                     <p className="mt-3 text-sm text-gray-500">
-                                        We care about the protection of your data. Read our
+                                        We care about the protection of your data. Read our{' '}
                                         <Link to="#" className="font-medium text-gray-900 underline">Privacy Policy</Link>.
                                     </p>
                                 </div>
