@@ -1,7 +1,21 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import { Transition } from "@headlessui/react"
-import { RefreshIcon } from "@heroicons/react/outline";
+import {
+    AnnotationIcon,
+    CodeIcon,
+    MailIcon,
+    PuzzleIcon,
+    RefreshIcon,
+} from "@heroicons/react/outline";
+
+const navigation = [
+    { name: "Portfolio", slug: "portfolio", icon: CodeIcon },
+    { name: "Blog", slug: "blog", icon: AnnotationIcon },
+    { name: "Builds", slug: "builds", icon: PuzzleIcon },
+    { name: "Refresh", slug: "refresh", icon: RefreshIcon },
+    { name: "Contact", slug: "contact", icon: MailIcon },
+];
 
 export default function Header() {
     const [mobileIsOpen, setMobileIsOpen] = useState(false);
@@ -23,11 +37,9 @@ export default function Header() {
                 </div>
 
                 <div className="hidden md:flex md:space-x-10">
-                    <Link to="/portfolio" className="mt-2 font-medium text-gray-500 hover:text-gray-900" activeClassName="text-gray-900">Portfolio</Link>
-                    <Link to="/blog" className="mt-2 font-medium text-gray-500 hover:text-gray-900" activeClassName="text-gray-900">Blog</Link>
-                    <Link to="/builds" className="mt-2 font-medium text-gray-500 hover:text-gray-900" activeClassName="text-gray-900">Builds</Link>
-                    <Link to="/refresh" className="mt-2 font-medium text-gray-500 hover:text-gray-900" activeClassName="text-gray-900">Refresh</Link>
-                    <Link to="/contact" className="mt-2 font-medium text-gray-500 hover:text-gray-900" activeClassName="text-gray-900">Contact</Link>
+                    {navigation.map((item, itemIdx) => (
+                        <Link to={`/${item.slug}`} key={itemIdx} className="mt-2 font-medium text-gray-500 hover:text-gray-900" activeClassName="text-gray-900">{item.name}</Link>
+                    ))}
                 </div>
             </nav>
 
@@ -58,34 +70,12 @@ export default function Header() {
                             </div>
                             <div className="mt-6" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
                                 <nav className="grid gap-y-8" role="none">
-                                    <Link to="/portfolio" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" role="menuitem">
-                                        <svg className="flex-shrink-0 w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                                        </svg>
-                                        <span className="ml-3 text-base font-medium text-gray-900">Portfolio</span>
-                                    </Link>
-                                    <Link to="/blog" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" role="menuitem">
-                                        <svg className="flex-shrink-0 w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-                                        </svg>
-                                        <span className="ml-3 text-base font-medium text-gray-900">Blog</span>
-                                    </Link>
-                                    <Link to="/builds" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" role="menuitem">
-                                        <svg className="flex-shrink-0 w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
-                                        </svg>
-                                        <span className="ml-3 text-base font-medium text-gray-900">Builds</span>
-                                    </Link>
-                                    <Link to="/builds" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" role="menuitem">
-                                        <RefreshIcon className="flex-shrink-0 w-6 h-6 text-orange-600" />
-                                        <span className="ml-3 text-base font-medium text-gray-900">Refresh</span>
-                                    </Link>
-                                    <Link to="/contact" className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" role="menuitem">
-                                        <svg className="flex-shrink-0 w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                        </svg>
-                                        <span className="ml-3 text-base font-medium text-gray-900">Contact</span>
-                                    </Link>
+                                    {navigation.map((item, itemIdx) => (
+                                        <Link to={`/${item.slug}`} key={itemIdx} className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" role="menuitem">
+                                            <item.icon className="flex-shrink-0 w-6 h-6 text-orange-600" />
+                                            <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
+                                        </Link>
+                                    ))}
                                 </nav>
                             </div>
                         </div>
