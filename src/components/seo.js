@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const SEO = ({ title, description }) => {
+const SEO = ({ title, description, robots }) => {
     const { site } = useStaticQuery(query);
 
     const {
@@ -23,6 +23,7 @@ const SEO = ({ title, description }) => {
             {seo.url && <meta property="og:url" content={seo.url} />}
             {seo.title && <meta property="og:title" content={seo.title} />}
             {seo.description && <meta property="og:description" content={seo.description} />}
+            {robots == true && <meta name="robots" content="noindex" />}
         </Helmet>
     );
 }
