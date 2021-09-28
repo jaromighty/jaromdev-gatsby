@@ -12,6 +12,7 @@ export default function OrchardChiropractic() {
         <>
             <SEO
                 title="Orchard Chiropractic"
+                robots={true}
             />
 
             <RefreshBanner color="bg-red-600" />
