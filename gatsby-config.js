@@ -17,5 +17,13 @@ module.exports = {
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: '1',
+        matomoUrl: 'https://analytics.jarom.dev',
+        siteUrl: 'https://jarom.dev',
+      },
+    }
   ],
 }
