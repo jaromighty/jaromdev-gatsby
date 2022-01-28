@@ -11,7 +11,7 @@ import gaminghusband from "../../images/portfolio-websites/the-gaming-husband.jp
 const clients = [
     { name: "Country K9", href: "https://countryk9.dog/?ref=jaromdev", image: countryk9 },
     { name: "The Gaming Husband", href: "https://gaminghusband.com/?ref=jaromdev", image: gaminghusband },
-    { name: "Harpist in the Springs", href: "https://harpistinthesrpings.com/?ref=jaromdev", image: harpistsprings },
+    { name: "Harpist in the Springs", href: "https://harpistinthesprings.com/?ref=jaromdev", image: harpistsprings },
     { name: "Mount Lewis Boers", href: "https://mountlewisboers.com/?ref=jaromdev", image: boers },
     { name: "Relative Interest", href: "https://relativeinterest.com/?ref=jaromdev", image: relativeinterest },
 ];
